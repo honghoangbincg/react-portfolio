@@ -3,6 +3,11 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./secens/Navbar";
 import DotGroup from "./secens/DotGroup";
 import Landing from "./secens/Landing";
+import LineGradient from "./components/LineGradient";
+import MySkills from "./secens/MySkills";
+import Projects from "./secens/Projects";
+import Testimonials from "./secens/Testimonials";
+import Contact from "./secens/Contact";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -30,6 +35,22 @@ function App() {
           />
         )}
         <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Testimonials />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Contact />
       </div>
     </div>
   );
