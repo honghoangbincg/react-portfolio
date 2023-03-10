@@ -67,7 +67,12 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <form target="_blank" onSubmit={onSubmit} action="" method="POST">
+          <form
+            target="_blank"
+            onSubmit={onSubmit}
+            action="https://formsubmit.co/hong.ht150297@gmail.com"
+            method="POST"
+          >
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
@@ -83,9 +88,10 @@ const Contact = () => {
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
+
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              type="email"
+              type="text"
               placeholder="email"
               {...register("email", {
                 required: true,
@@ -98,6 +104,33 @@ const Contact = () => {
                 {errors.email.type === "pattern" && "Invaild email address."}
               </p>
             )}
+            <textarea
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              type="text"
+              placeholder="message"
+              rows="4"
+              cols="50"
+              {...register("message", {
+                required: true,
+                maxLength: 2000,
+              })}
+            />
+            {errors.message && (
+              <p classmessage="text-red mt-1">
+                {errors.message.type === "required" &&
+                  "This field is required."}
+                {errors.message.type === "maxLength" &&
+                  "Max length is 2000 char."}
+              </p>
+            )}
+            <button
+              type="submit"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white
+              transition duration-500
+              "
+            >
+              send me a message
+            </button>
           </form>
         </motion.div>
       </div>
