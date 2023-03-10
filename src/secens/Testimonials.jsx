@@ -48,7 +48,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-playfair text-6xl">“</p>
           <p className="text-xl text-center">
             Lorem ipsum dolor sit amet, consectetur adipaerat aut quos. Ea
             laborum dolor exercitatio
@@ -68,7 +68,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-playfair text-6xl">“</p>
           <p className="text-xl text-center">
             Lorem ipsum dolor sit amet, consectetur adipaerat aut quos. Ea
             laborum dolor exercitatio
@@ -88,7 +88,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-playfair text-6xl">“</p>
           <p className="text-xl text-center">
             Lorem ipsum dolor sit amet, consectetur adipaerat aut quos. Ea
             laborum dolor exercitatio

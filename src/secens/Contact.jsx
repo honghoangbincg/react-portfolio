@@ -16,6 +16,7 @@ const Contact = () => {
     <section id="contact" className="py-48">
       {/* headings */}
       <motion.div
+        className=""
         initial="hidden"
         whileInView="visible"
         viewport={{
@@ -28,11 +29,11 @@ const Contact = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl">
+        <p className="font-playfair font-semibold text-4xl text-right">
           <span className="text-yellow">Contact me</span> to get started
         </p>
         <div className="flex md:justify-end my-5">
-          <LineGradient width="mx-auto w-2/4" />
+          <LineGradient width="w-1/4" />
         </div>
       </motion.div>
       {/* form and image */}
@@ -70,7 +71,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/hong.ht150297@gmail.com"
+            action="https://formsubmit.co/00cece764a68a7bde247daadc46ba11b"
             method="POST"
           >
             <input

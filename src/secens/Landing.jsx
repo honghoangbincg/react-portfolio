@@ -62,7 +62,7 @@ const Landing = ({ setSelectedPage }) => {
               before:-top-[70px] before:z-[-1]
               "
             >
-              Esper
+              ESPER
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">

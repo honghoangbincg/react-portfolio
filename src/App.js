@@ -8,6 +8,7 @@ import MySkills from "./secens/MySkills";
 import Projects from "./secens/Projects";
 import Testimonials from "./secens/Testimonials";
 import Contact from "./secens/Contact";
+import Footer from "./secens/Footer";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -52,6 +53,7 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }
